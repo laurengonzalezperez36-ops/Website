@@ -7,6 +7,7 @@
   "use strict";
 
   $(function () {
-    $(".footer-container").load("footer.html");
+    // Load footer.html only into the last .footer-container on the page
+    $(".footer-container").last().load("footer.html");
   });
 })();

@@ -32,3 +32,24 @@
   display: none;
   color: #007bff;
 }
+.lang-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 999;
+}
+
+.lang-toggle button {
+  margin-left: 6px;
+  padding: 4px 10px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.lang-toggle button:hover {
+  background: #555;
+}
