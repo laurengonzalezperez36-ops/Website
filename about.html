@@ -13,9 +13,14 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="js/menu.js"></script>
+  <!-- jQuery (ONLY once) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- menu loader -->
+<script src="js/menu.js"></script>
+
+<!-- language system -->
+<script src="js/language.js"></script> 
   <script src="js/footer.js"></script>
   <script src="js/widgets.js"></script>
   <script src="js/util.js"></script>
@@ -36,7 +41,8 @@
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>About Me</h2>
+            <h2 id="buttons-and-inputs" data-i18n="exploreAboutMe">
+            About Me</h2>
             <p class="text">
               Luminescent lights flickering within me—for my community, for the injustices that surround us: unhoused neighbors, families in poverty, hardworking immigrants, and unsheltered animals. I once froze in fear and self-doubt, but these experiences pushed me to act. This reflection led me to found <strong>Project Mosaic</strong>, a nonprofit supporting these communities.
             </p>

@@ -11,9 +11,16 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
+<!-- jQuery (ONLY once) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- menu loader -->
+<script src="js/menu.js"></script>
+
+<!-- language system -->
+<script src="js/language.js"></script>
+ <script src="js/footer.js"></script>
+</head>
   <style>
     .menu-index {
       color: rgb(255, 255, 255) !important;
@@ -24,13 +31,20 @@
 </head>
 
 <body>
-  <!-- Language Toggle -->
+<!-- Language Toggle -->
 <div class="lang-toggle">
-  <button onclick="setLanguage('en')">EN</button>
-  <button onclick="setLanguage('es')">ES</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('es')">ES</button>
 </div>
+
+<!-- Load scripts AFTER the page content -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/language.js"></script>
+
+  <!-- Menu container — this is where menu.html will load -->
   <div class="menu-container"></div>
-  <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
     <!--Start Header-->
     <div class="banner" style="background: url('img/Engineering\ Law.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
@@ -62,7 +76,7 @@
             <p class="text text-large">
               <a target="_blank" href="https://www.linkedin.com/in/lauren-gonzalez-perez-011395374/">LinkedIn</a>, lauren gonzalez-perez<br>
               <a target="_blank" href="https://github.com/laurengonzalezperez36-ops">Github</a>, laurengonzalezperez36-ops<br>
-              <a target="_blank" href="javascript:void(0)">Email</a>, laurengonzalezperez36@gmail.com<br>
+              <a target="_blank" href="javascript:void(0)">Email:</a> laurengonzalezperez36@gmail.com<br>
               <a target="_blank" href="javascript:void(0)">Non-profit Organization:</a> Project Mosaic<br> 
               <a target="_blank" href="javascript:void(0)">High School:</a> Math and Science College Preparatory 27'<br>
               <a target="_blank" href="javascript:void(0)">Community College:</a> Los Angeles Trade Technical, A.S. Administrative Justice 27'<br>
@@ -72,8 +86,8 @@
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text add-top-margin">
-              This website serves as both a professional portfolio and a mission-driven platform aligned with my goal of becoming a patent attorney with a background in electrical engineering and psychology. It highlights my technical development, analytical thinking, and growing interest in intellectual property law, while also sharing structured resources intended to support marginalized communities. The site is designed for recruiters, internship coordinators, practicum instructors, future law school admissions committees, and community partners.
+            <p class="text add-top-margin" data-i18n="aboutDescription">
+             This website serves as both a professional portfolio and a mission-driven platform aligned with my goal of becoming a patent attorney with a background in electrical engineering and psychology. It highlights my technical development, analytical thinking, and growing interest in intellectual property law, while also sharing structured resources intended to support marginalized communities. The site is designed for recruiters, internship coordinators, practicum instructors, future law school admissions committees, and community partners.
             </p>
             <h3 data-i18n="tocTitle">Table of Content</h3>
             <ul>
@@ -94,22 +108,22 @@
              Personal Story
             </h2>
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="personalStoryParagraph1">
               My path toward advocacy began long before I had the language to describe it. Growing up in Los Angeles as the daughter of immigrant parents, I witnessed both the quiet sacrifices that sustain families and the structural barriers that often go unseen by others. Early mornings in my father’s car, long afternoons waiting after school, and weekends spent alongside my parents at work taught me discipline, patience, and deep respect for resilience.
             </p>
-            <p class="text">
+            <p class="text" data-i18n="personalStory2">
               As I grew older, the disparities in my community became impossible to ignore—from unhoused neighbors at freeway exits to families navigating systems not built for them. Rather than allowing these realities to become background noise, I began transforming observation into action through academic focus and community work, including the expansion of Project Mosaic.
-            <p class="text">
+            <p class="text" data-i18n="lessonsCarried">
               Today, I carry forward the lessons my parents modeled: that dignity should never depend on circumstance, and that meaningful change requires both technical knowledge and sustained advocacy. My work reflects a long-term commitment to advancing equitable access, protecting innovation responsibly, and ensuring that the communities that shaped me are never overlooked.
             </p>
             <h3 data-i18n="prioritiesTitle">Current Priorities & Focus Areas</h3>
             <ul>
-              <li>Expanding research experience, particularly through publication opportunities such as my ongoing Lumiere independent research project on housing instability and immigration.</li>
-              <li>Building technical skills in electrical engineering, software development, and data analysis to strengthen my foundation for a future career in patent law.</li>               
-              <li>Pursuing paid internships and hands-on experiences that integrate engineering, policy, and civic innovation.</li>
-              <li>Growing Project Mosaic to create direct impact for marginalized communities while mentoring youth volunteers and expanding community partnerships.</li>
-              <li>Developing leadership, public speaking, and advocacy skills to translate passion into measurable change.</li>              
-              <li>Exploring intersections of technology, law, and psychology to address systemic inequities and promote ethical innovation.</li>               
+              <li data-i18n="priority1">Expanding research experience, particularly through publication opportunities such as my ongoing Lumiere independent research project on housing instability and immigration.</li>
+              <li data-i18n="priority2">Building technical skills in electrical engineering, software development, and data analysis to strengthen my foundation for a future career in patent law.</li>               
+              <li data-i18n="priority3">Pursuing paid internships and hands-on experiences that integrate engineering, policy, and civic innovation.</li>
+              <li data-i18n="priority4">Growing Project Mosaic to create direct impact for marginalized communities while mentoring youth volunteers and expanding community partnerships.</li>
+              <li data-i18n="priority5">Developing leadership, public speaking, and advocacy skills to translate passion into measurable change.</li>              
+              <li data-i18n="priority6">Exploring intersections of technology, law, and psychology to address systemic inequities and promote ethical innovation.</li>               
             <ul>
             </p>
           </div>
@@ -135,9 +149,10 @@
         <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-around-image">Mission Statement </h2>
+            <h2 id="text-around-image" data-i18n="missionTitle">
+              Mission Statement </h2>
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="missionText">
               <img class="image image-wrap-text max-width-400" src="img/mission.jpeg">
               I aim to leverage my background in electrical engineering, psychology, and law to create meaningful, ethical change at the intersection of technology, policy, and social justice. Through research, civic engagement, and Project Mosaic, I work to empower marginalized communities, amplify underrepresented voices, and translate ideas into tangible solutions that address systemic inequities.            </p>
           </div>
@@ -149,28 +164,29 @@
         <!--Start CTA Buttons-->
 <div class="flex-row">
   <div class="flex-item flex-column">
-    <h2 id="buttons-and-inputs">Explore My Work</h2>
+    <h2 id="buttons-and-inputs" data-i18n="exploreTitle">
+      Explore My Work </h2>
     <hr>
-    <p class="text">
+    <p class="text" data-i18n="exploreText">
       Learn more about my technical projects, community initiatives, and professional experience.
       I welcome opportunities for internships, research collaboration, and impact-driven work.
     </p>
 
     <div class="control-group">
 
-      <a class="custom-button custom-button-primary stretch-on-mobile" href="projects.html">
+      <a class="custom-button" data-i18n="viewProjects">
         View Projects
       </a>
 
-      <a class="custom-button custom-button-info stretch-on-mobile" href="community.html">
+      <a class="custom-button custom-button-info stretch-on-mobile" href="community.html" data-i18n="viewcommunity&info">
         Community & Information
       </a>
 
-      <a class="custom-button stretch-on-mobile" href="resume.html">
+      <a class="custom-button stretch-on-mobile" href="resume.html" data-i18n="viewresume">
         Resume
       </a>
 
-      <a class="custom-button custom-button-danger stretch-on-mobile" href="conatct.html">
+      <a class="custom-button custom-button-danger stretch-on-mobile" href="contact.html" data-i18n="viewcontact">
         Contact Me
       </a>
 
@@ -189,31 +205,31 @@
         <!--Start Text with Images and Image buttons-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="images-and-image-button">Impact Images</h2>
+            <h2 id="images-and-image-button" data-i18n="impactImages">Impact Images</h2>
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="impactDescription">
               The impact images on my personal branding website offer a visual narrative of my commitment to community-centered action. Rather than presenting service as abstract intention, these photographs document moments of direct engagement—from organizing donations to delivering essential supplies. Together, they illustrate how my work through Project Mosaic and related initiatives translates values into visible, measurable efforts that prioritize dignity, accessibility, and care.            </p>
           </div>
         </div>
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
             <img class="image max-width-400" src="img/ProjectMosaic.png">
-            <p class="image-caption"><strong>Project Mosaic Impact </strong></p>
+            <p class="image-caption" data-i18n="viewProjectMosaicImpact"><strong>Project Mosaic Impact </strong></p>
           </div>
           <div class="flex-item flex-column">
             <a href="https://github.com/laurengonzalezperez36-ops/Website" target="_blank" class="image max-width-400">
               <img src="img/ProjectPulmonaryLynwood.png">
             </a>
-           <p class="image-caption"><strong>Project Pulmonary Lynwood Impact </strong></p>
+           <p class="image-caption" data-i18n="viewProjectPulmonaryImpact"><strong>Project Pulmonary Lynwood Impact </strong></p>
           </div>
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text">
+            <p class="text" data-i18n="nonprofitInfo">
               Through Project Mosaic and Project Pulmonary, these efforts have resulted in tangible support for communities and frontline workers. From distributing food to local organizations to using over $100 in raised funds to provide hydration and snacks for firefighters, each initiative reflects my belief that small, coordinated actions can produce meaningful change. These projects demonstrate not only leadership and organization, but a sustained commitment to turning awareness into real-world impact.            </p>
       
         <h3>Gallery</h3>
-            <p class="text">
+            <p class="text" data-i18n="moreInfo">
               This gallery highlights the breadth of my involvement across academic, service, and leadership spaces. From cohort-based programs like the Riordan Scholars Program and my internship with YMHA to school and community initiatives, each image represents a moment of active participation and growth. While this is only a snapshot of my work, visitors can explore many additional initiatives in my Projects tab, resume, and LinkedIn. I selected these moments intentionally to offer a meaningful glimpse into the environments and communities that shape my journey.            <div class="flex-row">
           </div>
           </div>
@@ -222,45 +238,45 @@
           <a href="javascript:void(0)" class="flex-column"><img src="img/UCLA Riordan.png">
             <div><strong>UCLA Riordan Scholars Program</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/YMHA.jpg">
+          <a href="javascript:void(0)" class="flex-column" data-i18n="ymhaProgram"><img src="img/YMHA.jpg">
             <div><strong>Child Mind Institute Youth Mental Health Academy Internship</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/ProjectGlimmer.png">
+          <a href="javascript:void(0)" class="flex-column" data-i18n="projectglimmerProgram"><img src="img/ProjectGlimmer.png">
             <div><strong>Project Glimmer Girls' Empowerment Academy</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/NHSAIDs.png">
+          <a href="javascript:void(0)" class="flex-column" data-i18n="aidsProgram"><img src="img/NHSAIDs.png">
             <div><strong>National Honor Society AIDs Walk</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/NHS Tutor.png">
+          <a href="javascript:void(0)" class="flex-column" data-="tutorProgram"><img src="img/NHS Tutor.png">
             <div><strong>National Honor Society K-4th Tutoring</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/NHSFundraiser1.png">
+          <a href="javascript:void(0)" class="flex-column" data-i18n="collabProgram"><img src="img/NHSFundraiser1.png">
             <div><strong>National Honor Society x Spanish Honor Society Fundraiser</strong></div>
           </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/NHSFundraiser2.png">
+          <a href="javascript:void(0)" class="flex-column" data-i18n="nhsHhmProgram"><img src="img/NHSFundraiser2.png">
             <div><strong>National Honor Society Hispanic Heritage Month Fundraiser</strong></div>
           </a>
-           <a href="javascript:void(0)" class="flex-column"><img src="img/NHSFoodBank.png">
+           <a href="javascript:void(0)" class="flex-column" data-i18n="nhsVolunteerProgram"><img src="img/NHSFoodBank.png">
             <div><strong>National Honor Society Food Bank Volunteer</strong></div>
-           <a href="javascript:void(0)" class="flex-column"><img src="img/NHSInduction.JPEG">
+           <a href="javascript:void(0)" class="flex-column" data-i18n="nhsProgram"><img src="img/NHSInduction.JPEG">
             <div><strong>National Honor Society Induction Ceremony</strong></div>
           </a>
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text">
+            <p class="text" data-i18n="contributions text">
               Across these initiatives, my contributions have supported both immediate community needs and long-term capacity building. Whether creating empowerment content for Project Glimmer’s Girls’ Empowerment Academy, participating in the AIDS Walk Los Angeles through NHS, tutoring K–4 students, or helping lead fundraisers benefiting immigrant families and Guatemalan youth, my focus remains consistent: turning involvement into measurable support. Our food bank work alone helped package 77,656 pounds of produce for distribution to families in need, and my formal induction as NHS Treasurer reflects the trust placed in my leadership and accountability. Collectively, these efforts reinforce my ultimate goal of uplifting and supporting marginalized communities and communities in need.            </p>
          
-              <h3>Mentorship</h3>
-              <p class="text">
+              <h3 data-i18n="mentorshipTitle">Mentorship</h3>
+              <p class="text" data-i18n="mentorshipIntro">
               Mentorship has been a quiet but powerful force in my growth, and this section highlights two of the many individuals who have guided me along my journey. While I have been fortunate to learn from a broader network of educators and professionals, I selected these mentors to offer a focused glimpse into the relationships that have most directly shaped my academic and career direction. Their support reflects the importance of intergenerational knowledge-sharing in expanding access, confidence, and opportunity.
               </p>
         <div class="gallery add-top-margin-small add-bottom-margin-small">
           <div class="flex-column">
             <img src="img/Adila.png">
-            <h3>Adila Mehjebin</h3>
-            <div>PhD Candidate </div>
-            <div>
+            <h3 data-i18n="mentorAdilaName">Adila Mehjebin</h3>
+            <div data-i18n="mentorAdilaRole">PhD Candidate</div>
+            <div data-i18n="mentorAdilaDesc">
               Lumiere Independent Research Mentor
              &nbsp;|&nbsp;
               <a href="www.linkedin.com/in/adilamehjebin/" target="_blank">LinkedIn</a>
@@ -269,9 +285,11 @@
           <div class="flex-column">
             <img src="img/Sayali.png">
             <h3>Sayali Dhale </h3>
-            <div>UCLA MBA Candidate </div>
-            <div>
+            <h3 data-i18n="mentorSayaliName">Sayali Dhale</h3>
+            <div data-i18n="mentorSayaliRole">UCLA MBA Candidate</div>
+            <div data-i18n="mentorSayaliDesc">
               UCLA Riordan Scholars Mentor
+            </div>
               &nbsp;|&nbsp;
               <a href="https://www.linkedin.com/in/sayalidhale/" target="_blank">LinkedIn</a>
             </div>
@@ -279,7 +297,7 @@
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text">
+            <p class="text" data-i18n="mentorDescription">
               Through the Adila Mehjebin’s mentorship during the Lumiere Independent Research Program—where I participated on a full need-based scholarship—I investigated how structural vulnerabilities shape housing insecurity among Guatemalan deportees in their first year after return, uncovering the cyclical forces that sustain instability (explored further in my Projects tab). Despite being based in Canada, Adila provided consistent, thoughtful guidance that strengthened both my research process and confidence. Similarly, Sayali Dhale, a UCLA MBA candidate with a background in mechanical engineering, has been an incredibly generous mentor through the Riordan Scholars network—offering candid advice on college pathways, careers, and long-term goal setting. Through her support, I also connected with Timothy Pham, whose journey from electrical engineering into an MBA further reinforced my intended path. Together, these mentors exemplify the kind of guidance, authenticity, and encouragement that continues to shape both my ambitions and my commitment to pay mentorship forward.
         </p>
           </div>
@@ -308,7 +326,7 @@
         <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="centered-image-and-table" class="no-top-margin">Conclusion</h2>
+            <h2 id="centered-image-and-table" class="no-top-margin" data-i18n="conclusionPara">Conclusion</h2>
             <hr>
             <p class="text" data-i18n="conclusionText">
               My journey reflects a commitment to bridging technology, law, and community advocacy. From exploring the nuances of electrical engineering to understanding the intricacies of patent law, I strive to turn knowledge into tangible solutions that uplift underserved communities. Through mentorship, research, and hands-on projects, I aim to create meaningful impact while fostering ethical innovation. This website showcases not only my professional growth but also my dedication to leveraging skills for societal benefit.
