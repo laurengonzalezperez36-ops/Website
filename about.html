@@ -43,13 +43,13 @@
           <div class="flex-item flex-column">
             <h2 id="buttons-and-inputs" data-i18n="exploreAboutMe">
             About Me</h2>
-            <p class="text">
+            <p class="text" data-i18n="exploreStory">
               Luminescent lights flickering within me—for my community, for the injustices that surround us: unhoused neighbors, families in poverty, hardworking immigrants, and unsheltered animals. I once froze in fear and self-doubt, but these experiences pushed me to act. This reflection led me to found <strong>Project Mosaic</strong>, a nonprofit supporting these communities.
             </p>
-            <p class="text">
+            <p class="text" data-i18n="moreStory">
               Technology and innovation have always fascinated me, yet I’ve seen them misused as tools of surveillance, exploitation, or environmental harm. I aspire to use STEM ethically, creating solutions that serve rather than oppress: accessible shelters, helpful apps, or energy solutions for marginalized populations.
             </p>
-            <p class="text">
+            <p class="text" data-i18n="evenMore">
               Projects like <strong>ImmigrationAlly</strong>, an in-process  app making legal resources accessible across language and economic barriers, and my Lumiere research on Guatemalan deportees demonstrated resilience, iterative learning, and problem-solving at the intersection of law, policy, and engineering.
             </p>
           </div>
@@ -57,9 +57,11 @@
                 <!-- Education -->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Education</h2>
+            <h2 id="buttons-and-inputs" data-i18n="exploreEducation">
+             Education
+            </h2>
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="currentGoals">
               I am currently pursuing an A.S. in <strong>Administrative Justice</strong> as a dual-enrollement high school student. This degree commences an informative journey, experimenting with policy and advocacy found in law duties. My future plans consist of attending univeristy with a <strong>Bachelor’s in Electrical Engineering</strong> and a minor in <strong>Psychology</strong>. Math and engineering excite me because they allow me to design systems—like housing technologies or data solutions—that directly improve access and equity in underserved communities.
             </p>
           </div>
@@ -67,9 +69,11 @@
         <!-- Career Goal -->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Career Goal</h2>
+            <h2 id="buttons-and-inputs" data-i18n="exploreCareerGoal">
+            Career Goal
+            </h2> 
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="exploreCareer">
               I aim to become a <strong>Patent Attorney</strong>, combining engineering expertise with legal skills to ensure that technological innovations are ethical, equitable, and accessible—especially for inventors from underrepresented backgrounds.
             </p>
           </div>
@@ -77,9 +81,10 @@
         <!-- Mission -->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Mission</h2>
+            <h2 id="buttons-and-inputs" data-i18n="mission">
+              Mission</h2>
             <hr>
-            <p class="text">
+            <p class="text" data-i18n="missionTextAbout">
               My mission is to connect technology, law, and ethics to address systemic inequities. By leveraging STEM and legal advocacy, I aim to empower communities, amplify marginalized voices, and ensure innovation serves humanity rather than exploitation.
             </p>
           </div>
@@ -88,54 +93,74 @@
         <!-- Expandable Sections -->
           <div class="flex-row">
             <div class="flex-item flex-column">
-            <h2>Learn More</h2>
+            <h2 id="buttons-and-inputs" data-i18n="learnMore">
+            Learn More</h2>
             <hr>
-
             <div class="custom-dropdown stretch-on-mobile">
-              <a tabindex="0" href="javascript:void(0)"><span>Academic Interests</span></a>
+              <a tabindex="0" href="javascript:void(0)" data-i18n="academicInterests"><span>Academic Interests</span></a>
               <div>
-                <p class="text">
+                <p class="text" data-i18n="explanation">
                   Artificial intelligence, robotics, sustainable engineering, and ethical technology applications that address social inequities.
                 </p>
             </div>
           </div>
 
             <div class="custom-dropdown stretch-on-mobile">
-              <a tabindex="0" href="javascript:void(0)"><span>Leadership</span></a>
+              <a tabindex="0" href="javascript:void(0)" data-i18n="leadership"><span>Leadership</span></a>
               <div>
-                <p class="text">
+                <p class="text" data-i18n="leadershipInitiatives">
                   Led initiatives like Project Mosaic and Project Glimmer, organized workshops, and mentored youth in STEM and civic engagement.
                 </p>
             </div>
           </div>
         <!--Start Personal Support Gallery-->
-        <h2>My Support Network & Inspirations</h2>
-            <p class="text">
+        <h2 id="buttons-and-inputs" data-i18n="supportNetwork">
+          My Support Network & Inspirations</h2>
+            <p class="text" data-i18n="supportExplanation">
               Behind every project and every achievement are the people and companions who inspire me. My family of Guatemalan heritage taught me resilience, my friends keep me motivated, my cats provide unconditional support, and Project Mosaic channels all of this into community impact.
           </div>
           </div>
         </div>
         <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <a href="javascript:void(0)" class="flex-column"><img src="img/familymom.jpg">
-          <div><strong>My family of Guatemalan heritage</strong></div>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/familydad.jpg"><img src="img/dad.jpg"><img src="img/familycousins.jpg">
-          <div><strong>Family: Strength and resilience </strong></div>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/friends.jpg"><img src="img/Estrella.jpg"><img src="img/Estrella2.jpg">
-          <div><strong>Friends: Inspiration and motivation </strong></strong></div>
-          </p>
-          <div class="gallery add-top-margin-small add-bottom-margin-small"></div>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/michi.jpg">
-          <div><strong>Michi</strong></div>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/Roby.jpg">
-            <div><strong>Roby</strong></div>
-          </p>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/UNITELA.jpg">
-             <div><strong>Impact</strong></div>
-          </a>
-        </div>
+         <div class="gallery add-top-margin-small add-bottom-margin-small">
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/familymom.jpg">
+    <div><strong data-i18n="familyCaption">My family of Guatemalan heritage</strong></div>
+  </a>
+
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/familydad.jpg">
+    <img src="img/dad.jpg">
+    <img src="img/familycousins.jpg">
+    <div><strong data-i18n="familyStrengthCaption">Family: Strength and resilience</strong></div>
+  </a>
+
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/friends.jpg">
+    <img src="img/Estrella.jpg">
+    <img src="img/Estrella2.jpg">
+    <div><strong data-i18n="friendsCaption">Friends: Inspiration and motivation</strong></div>
+  </a>
+
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/michi.jpg">
+    <div><strong data-i18n="michiCaption">Michi</strong></div>
+  </a>
+
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/Roby.jpg">
+    <div><strong data-i18n="robyCaption">Roby</strong></div>
+  </a>
+
+  <a href="javascript:void(0)" class="flex-column">
+    <img src="img/UNITELA.jpg">
+    <div><strong data-i18n="impactCaption">Impact</strong></div>
+  </a>
+</div>
+        <div class="flex-row">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text">
+            <p class="text" data-i18n="elaboration">
               Behind every milestone in my journey is a network of people and companions who have shaped who I am becoming. My Guatemalan family instilled in me resilience and responsibility, my friends continue to motivate and ground me, and even the quiet presence of my cats has reminded me of the importance of patience and care. Together, these sources of support fuel my commitment to using law, technology, and community-centered initiatives like Project Mosaic to create meaningful and lasting impact.            </p>
           </div>
         </div>
